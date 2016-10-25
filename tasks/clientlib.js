@@ -28,6 +28,7 @@ module.exports = function(grunt) {
     var done = this.async();
     var clientLibEmbed = this.data.embed;
     var clientLibDeps  = this.data.dependencies;
+    var clientLibCategories = this.data.categories;
     var clientLibName  = this.target;
     var options        = this.options({
       flatten: true,
@@ -110,6 +111,7 @@ module.exports = function(grunt) {
       name: clientLibName,
       embed: clientLibEmbed,
       dependencies: clientLibDeps,
+      categories: clientLibCategories,
       assets: assets
     };
 
